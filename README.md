@@ -33,5 +33,5 @@ class Sample {
 }
 
 ```
-[!CompilationLogs](art/logs.png)
+![CompilationLogs](art/logs.png)
 
