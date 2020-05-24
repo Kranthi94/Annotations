@@ -14,3 +14,34 @@ dependencies {
 
 sourceCompatibility = "7"
 targetCompatibility = "7"
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    bintrayRepo = "Annotations"
+    bintrayName = "com.innovatorlabs.annotationcompiler"
+    libraryName = "annotationcompiler"
+
+    publishedGroupId = "com.innovatorlabs.annotationcompiler"
+    artifact = "annotationcompiler"
+    libraryVersion = "1.0.0"
+
+    libraryDescription = ""
+    siteUrl = "https://github.com/Kranthi94/Annotations"
+    gitUrl = "https://github.com/Kranthi94/Annotations.git"
+
+    developerId = "kranthi94"
+    developerName = "Kranthi Kumar"
+    developerEmail = "studymaterials0894@gmail.com"
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+if (project.rootProject.file('local.properties').exists()) {
+    apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+    apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
+}
