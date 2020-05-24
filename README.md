@@ -35,3 +35,6 @@ class Sample {
 ```
 ![CompilationLogs](art/logs.png)
 
+## Authors
+* **Kranthi Kumar**
+
