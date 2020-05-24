@@ -3,16 +3,14 @@ With the help of this you can annotate a class, method or a field which needs to
 Compiler throws error during compilation when there are some Todos in the project that needs to be resolved
 
 ## Getting Started
-Using Gradle
+Root build.gradle
 ```
-root build.gradle
-
 repositories {
   jcenter()
 }
-
-app build.gradle
-
+```
+App build.gradle
+```
 apply plugin: 'kotlin-kapt'
 
 implementation 'com.innovatorlabs.annotations:annotations:1.0.0'
