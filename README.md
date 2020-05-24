@@ -35,6 +35,8 @@ class Sample {
 ```
 ![CompilationLogs](art/logs.png)
 
+![CompilationError](art/error.png)
+
 ## Authors
 * **Kranthi Kumar**
 
