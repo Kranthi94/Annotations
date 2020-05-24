@@ -5,8 +5,17 @@ Compiler throws error during compilation when there are some Todos in the projec
 ## Getting Started
 Using Gradle
 ```
+root build.gradle
+
+repositories {
+  jcenter()
+}
+
+app build.gradle
+
 apply plugin: 'kotlin-kapt'
 
 implementation 'com.innovatorlabs.annotations:annotations:1.0.0'
+
 kapt 'com.innovatorlabs.annotationcompiler:annotationcompiler:1.0.0'
 ```
