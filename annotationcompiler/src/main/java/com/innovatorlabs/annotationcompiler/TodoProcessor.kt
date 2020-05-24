@@ -46,7 +46,7 @@ class TodoProcessor : AbstractProcessor() {
         if (todosFound) {
             Logger.getAnonymousLogger().log(Level.SEVERE, "######################################################################")
             try {
-                Runtime.getRuntime().exec("./gradlew --stop")
+                processingEnv.messager.printMessage(Diagnostic.Kind.ERROR, "Compilation Error - Resolve the Todos")
             } catch (e: IOException) {
                 processingEnv.messager.printMessage(Diagnostic.Kind.ERROR, e.printStackTrace().toString())
             }
