@@ -5,4 +5,9 @@ class Sample {
 
     @Todo(note = "Medium Priority", priority = TodoPriority.MEDIUM)
     lateinit var text: String
+
+    @Todo(note = "Low Priority", priority = TodoPriority.LOW)
+    fun next() {
+
+    }
 }
